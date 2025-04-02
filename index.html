@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website- Nishit Ram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img height="100" src="amazon_logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <H1>Hi,I'm <span>Nishit</span><br>Ram From India</H1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="main.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deleniti quia optio dolor iure harum cum voluptas libero omnis? Dolores facilis nulla tenetur porro sed quidem alias voluptatum numquam quo repudiandae, voluptatibus quasi? Placeat doloremque facere laudantium, soluta culpa quos incidunt sunt minus modi nobis.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><BR>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><BR>Web App Development</li>
+                            <li><span>App Development</span><BR>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                        <li><span>2025</span><br>Team lead at Techsynopsis(secured 1st place) organized by GDG on Campus,Silicon University.</li>
+                        <li><span>26 June-25 July,2024</span><br>Industrial Training program on "AWS Masters" by Ingenious-tech</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin
+                        Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        <li><span>2023-2027</span> <br>Silicon University, Bhubaneswar, Odisha,4 Year BTech CSE,Currently in 2rd Year, CGPA:9.2.</li>
+                        <li><span>2021-2023</span><br>ST. XAVIER'S High School, Keonjhar,Odisha, 12th CBSE Board Examination, SCIENCE,85.6%.</li>
+                        <li><span>2007-2023</span><br>Nirmala Convent School, Keonjhar, Odisha,10th ICSE Board Examination,96% .</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------portfolio----------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1> <div class="sub-title">My Work</div></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="box6_image.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This aap connects you to the talented people around the world. Download now and get connected.</p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="box5_image.jpg">
+                </div>
+                <div class="work">
+                    <img src="box7_image.jpg">
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+</body>
+</html>
