@@ -293,9 +293,12 @@ nav .fas{
 header-text{
     margin-top: 100%;
     font-size: 16px;
+    color: #ecaf77;
+    
 }
 header-text h1{
     font-size: 30px;
+    color: #f38d2e;
 }
 nav .fas{
     display: block;
