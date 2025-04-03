@@ -341,4 +341,7 @@ about-col-2{
 .contact-left, .contact-right{
     flex-basis: 100%;
 }
+nav img{
+    height: 75px;
+}
 }
