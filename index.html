@@ -11,14 +11,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img height="100" src="amazon_logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img height="200" src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Front-end Developer</p>
@@ -35,7 +37,11 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deleniti quia optio dolor iure harum cum voluptas libero omnis? Dolores facilis nulla tenetur porro sed quidem alias voluptatum numquam quo repudiandae, voluptatibus quasi? Placeat doloremque facere laudantium, soluta culpa quos incidunt sunt minus modi nobis.</p>
+                    <p>I am Nishit Ram, a 2nd-year BTech CSE student at Silicon University, Bhubaneswar. I excel in frontend development  and programming languages like C, C++, Java, and Python.
+
+                        Beyond academics, I have a strong passion for leadership. I serve as the Class Representative of CSE-D and have held roles in the Meta Academics Cell and as a Student Prefect. My leadership journey began as the Students Academic Head at St. Xavier’s High School, Keonjhar.
+                        
+                        I bring a multilingual approach to collaboration. Passionate about technology and innovation, I strive to learn, contribute, and make an impact.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -77,7 +83,7 @@
             <h1> <div class="sub-title">My Work</div></h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="box6_image.jpg">
+                    <img src="socialmedia.jpg" height="300">
                     <div class="layer">
                         <h3>Social Media App</h3>
                         <p>This aap connects you to the talented people around the world. Download now and get connected.</p>
@@ -85,7 +91,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="box5_image.jpg">
+                    <img src="shopping.jpg" height="300">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
                         <p>This aap connects you to the talented people around the world. Download now and get connected.</p>
@@ -93,7 +99,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="box7_image.jpg">
+                    <img src="music.jpg" height="300">
                     <div class="layer">
                         <h3>Music App</h3>
                         <p>This aap connects you to the talented people around the world. Download now and get connected.</p>
@@ -101,9 +107,35 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>;
+            <a href="#" class="btn">See More</a>
         </div>
      </div>
+    <!-- -- ----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> nishitram2027@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 6371582235</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/nishit_63?igsh=am1jcjAzM2ZjNmxh"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nishit-ram-8525a1338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="Nishit_Ram.resume.docx" class="btn"> Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -124,6 +156,16 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+        </script>
+        <script>
+            var sidemenu =documen.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right ="0";
+            }
+            function closemenu(){
+                sidemenu.style.right ="-200px";
+            }
         </script>
 </body>
 </html>
